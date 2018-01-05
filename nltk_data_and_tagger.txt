@@ -1,2 +1,38 @@
 pip install nltk
 
+-----------------------------------------------------------------------------------------------
+
+Count how many adjectives and nouns appear in the positive subset of the twitter_samples corpus:
+
+-----------------------------------------------------------------------------------------------
+
+Importing NLTK
+	$	python -c "import nltk"
+	$	python -c "import nltk; print (nltk.__version__)"
+	
+	$	pip install nltk
+	
+Downloading NLTK's Data and Tagger
+	Download NLTK's twitter_samples corpus:
+	
+	$	python -m nltk.downloader twitter_samples
+	
+	Download the POS (parts-of-speech) Tagger called averaged_perceptron_tagger:
+	
+	$	python -m nltk.downloader averaged_perceptron_tagger
+	
+	Log-in to Python and importthe twitter_samples corpus:
+	
+	>>>	from nltk.corpus import twitter_samples
+	
+	All the full tweets are stored in the corpus in JSON files.
+	To see how many JSON files exist in the imported corpus, run the following:
+	
+	>>>	twitter_samples.fileids()
+	[u'negative_tweets.json', u'positive_tweets.json', u'tweets.20150430-223406.json']
+	
+	You can view the strings/tweets in a particular JSON file by running the following:
+	
+	>>>	twitter_samples.strings('tweets.20150430-223406.json')
+	
+	
