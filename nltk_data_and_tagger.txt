@@ -7,12 +7,14 @@ Count how many adjectives and nouns appear in the positive subset of the twitter
 -----------------------------------------------------------------------------------------------
 
 Importing NLTK
+	
 	$	python -c "import nltk"
 	$	python -c "import nltk; print (nltk.__version__)"
 	
 	$	pip install nltk
 	
 Downloading NLTK's Data and Tagger
+	
 	Download NLTK's twitter_samples corpus:
 	
 	$	python -m nltk.downloader twitter_samples
